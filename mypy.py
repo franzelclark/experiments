@@ -8,12 +8,12 @@ features = [[140, 1], [130, 1], [150, 0], [170, 0]]
 labels = [0, 0, 1, 1]
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(features, labels)
+print("I will predict if it is an Apple or Orange.\n")
+prediction = clf.predict([[int(input("Weight (in grams): ")), int(input("Smoothness: "))]])
+if prediction == [0]:
+    print("I predict that it is an Apple")
+elif prediction == [1]:
+    print("I predict that it is an Orange")
 
-prediction = clf.predict([[int(input("Weight: ")), int(input("Smoothness: "))]])
-if prediction == "[0]"
-	print ("Apple")
-elif prediction == "[1]"
-	print ("Orange")
-
-print(prediction)
+#print(prediction)
 #[0] or [1]
